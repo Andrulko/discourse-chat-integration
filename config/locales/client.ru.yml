@@ -1,9 +1,3 @@
-# WARNING: Never edit this file.
-# It will be overwritten when translations are pulled from Crowdin.
-#
-# To work with us on translations, join this project:
-# https://translate.discourse.org/
-
 ru:
   js:
     admin:
@@ -75,6 +69,9 @@ ru:
           group: "Это правило будет применяться к сообщениям, ссылающимся на эту группу"
           tags: "Если указано, то правило будет применяться к темам, которые имеют хотя бы один из этих тегов"
       provider:
+        #######################################
+        ########### SLACK STRINGS #############
+        #######################################
         slack:
           title: "Slack"
           param:
@@ -84,6 +81,9 @@ ru:
           errors:
             action_prohibited: "Бот не имеет разрешения на публикацию в этот канал"
             channel_not_found: "Указанный канал не существует в Slack"
+        #######################################
+        ########## TELEGRAM STRINGS ###########
+        #######################################
         telegram:
           title: "Telegram"
           param:
@@ -96,6 +96,9 @@ ru:
           errors:
             channel_not_found: "Указанный канал не существует в Telegram"
             forbidden: "Бот не имеет разрешения на публикацию на этот канал"
+        #######################################
+        ########### DISCORD STRINGS ###########
+        #######################################
         discord:
           title: "Discord"
           param:
@@ -105,6 +108,9 @@ ru:
             webhook_url:
               title: URL вебхука
               help: URL-адрес вебхука, созданный в настройках сервера Discord
+        #######################################
+        ######### MATTERMOST STRINGS ##########
+        #######################################
         mattermost:
           title: "Mattermost"
           param:
@@ -113,6 +119,9 @@ ru:
               help: "например, #channel, @username."
           errors:
             channel_not_found: "Указанный канал не существует в Mattermost"
+        #######################################
+        ############ MATRIX STRINGS ###########
+        #######################################
         matrix:
           title: "Matrix"
           param:
@@ -125,6 +134,9 @@ ru:
           errors:
             unknown_token: "Неверный токен доступа"
             unknown_room: "Номер комнаты недействителен"
+        #######################################
+        ############# ZULIP STRINGS ###########
+        #######################################
         zulip:
           title: "Zulip"
           param:
@@ -136,6 +148,9 @@ ru:
               help: "Тема, уведомляющая о том, что, должно быть указано сообщение, отправляемое ботом"
           errors:
             does_not_exist: "Этот поток не существует в Zulip"
+        #######################################
+        ######## ROCKET CHAT STRINGS ##########
+        #######################################
         rocketchat:
           title: "Rocket.Chat"
           param:
@@ -144,6 +159,9 @@ ru:
               help: "например, #channel, @username."
           errors:
             invalid_channel: "Этот канал не существует в Rocket Chat"
+        #######################################
+        ############ GITTER STRINGS ###########
+        #######################################
         gitter:
           title: "Gitter"
           param:
@@ -153,12 +171,18 @@ ru:
             webhook_url:
               title: "URL вебхука"
               help: "URL, указанный при создании новой интеграции в комнате Gitter."
+        #######################################
+        ########## FLOWDOCK STRINGS ###########
+        #######################################
         flowdock:
           title: "Flowdock"
           param:
             flow_token:
               title: "Flow Token"
               help: "Токен потока предоставляется после создания источника для потока, в который вы хотите отправлять сообщения."
+        #######################################
+        ########## GROUPME STRINGS ###########
+        #######################################
         groupme:
           title: "GroupMe"
           param:
@@ -168,6 +192,9 @@ ru:
           errors:
             not_found: "Путь, по которому вы пытались опубликовать ваше сообщение, не найден. Проверьте идентификатор бота в настройках сайта."
             instance_names_issue: "Имена экземпляров неправильно отформатированы или не указаны"
+        ############################################
+        ######### MICROSOFT TEAMS STRINGS ##########
+        ############################################
         teams:
           title: "Microsoft Teams"
           param:
@@ -176,6 +203,7 @@ ru:
               help: "Наименование канала, например 'Дискурс'."
             webhook_url:
               title: "URL вебхука"
+              help: "The URL provided when you create a new incomming webhook"
           errors:
             invalid_channel: "Этот канал не существует в Microsoft Teams"
         webex:
