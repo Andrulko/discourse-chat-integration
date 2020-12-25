@@ -1,14 +1,11 @@
-# WARNING: Never edit this file.
-# It will be overwritten when translations are pulled from Crowdin.
-#
-# To work with us on translations, join this project:
-# https://translate.discourse.org/
-
 he:
   site_settings:
     chat_integration_enabled: 'הפעלת התוסף discourse-chat-integration (שילוב צ׳אט ב־Discourse)'
     chat_integration_discourse_username: 'שם המשתמש להתחקות אליו בעת קבלת תוכן.'
     chat_integration_delay_seconds: 'מספר השניות להמתין לאחר יצירת פוסט בטרם שליחת התראות לצ׳אט'
+    #######################################
+    ########## SLACK SETTINGS #############
+    #######################################
     chat_integration_slack_username: "שם המשתמש של הבוט לפרסום דרך slack"
     chat_integration_slack_enabled: 'הפעלת ספק שילוב הצ׳אט עם Slack'
     chat_integration_slack_access_token: 'אסימון גישה OAuth לאימות מול Slack'
@@ -18,40 +15,73 @@ he:
     chat_integration_slack_outbound_webhook_url: "לטובת שימוש במערכת ‚ההתליות הנכנסות’ במקום ב־API של OAuth. לא מומלץ."
     errors:
       chat_integration_slack_api_configs_are_empty: "עליך לציין כתובת התלייה יוצאת או אסימון גישה"
+    #######################################
+    ######### TELEGRAM SETTINGS ###########
+    #######################################
     chat_integration_telegram_enabled: "הפעלת ספק שילוב הצ׳אט עם טלגרם"
     chat_integration_telegram_access_token: "אסימון הגישה לבוט שלך מה־botfather של טלגרם"
     chat_integration_telegram_excerpt_length: "אורך מהפוסט שמופיע בתקציר בטלגרם"
     chat_integration_telegram_enable_slash_commands: "לאפשר ניהול מינויים בטלגרם דרך ‚פקודות לוכסן’"
+    #######################################
+    ########## DISCORD SETTINGS ###########
+    #######################################
     chat_integration_discord_enabled: "הפעלת ספק שילוב הצ׳אט עם Discord"
     chat_integration_discord_message_content: "ההודעה שיש לכלול מעל לסיכום בעת שליחת התראות ל־Discord"
     chat_integration_discord_excerpt_length: "אורך מהפוסט שמופיע בתקציר ב־Discord"
+    #######################################
+    ######## MATTERMOST SETTINGS ##########
+    #######################################
     chat_integration_mattermost_enabled: "הפעלת ספק שילוב הצ׳אט עם Mattermost"
     chat_integration_mattermost_webhook_url: 'כתובת התלייה של Mattermost'
     chat_integration_mattermost_incoming_webhook_token: 'אסימון הווידוא שמשמש לאמת בקשות נכנסות'
     chat_integration_mattermost_icon_url: "סמל לפרסומים אל Mattermost (בררת המחדל היא לוגו הפורום)"
     chat_integration_mattermost_excerpt_length: "אורך מהפוסט שמופיע בתקציר ב־Mattermost"
+    #######################################
+    ############ MATRIX SETTINGS ##########
+    #######################################
     chat_integration_matrix_enabled: "הפעלת ספק שילוב הצ׳אט עם Matrix"
     chat_integration_matrix_homeserver: "שרת בית לחיבור. נא לוודא שכללת את הפרוטוקול."
     chat_integration_matrix_access_token: "אסימון גישה לחשבון ה־Matrix של הבוט"
     chat_integration_matrix_excerpt_length: "אורך מהפוסט שמופיע בתקציר ב־Matrix"
     chat_integration_matrix_use_notice: "להשתמש בהתראה במקום בהודעה פשוטה"
+    #######################################
+    ########### ZULIP SETTINGS ############
+    #######################################
     chat_integration_zulip_enabled: "הפעלת ספק שילוב הצ׳אט עם Zulip"
     chat_integration_zulip_server: "כתובת הבסיס לשרת ה־Zulip. נא לוודא שכללת גם את ה־‎http(s)://‎"
     chat_integration_zulip_bot_email_address: "כתובת הדוא״ל שמשויכת לבוט שלך ב־Zulip"
     chat_integration_zulip_bot_api_key: "מפתח ה־API לבוט ה־Zulip שלך"
     chat_integration_zulip_excerpt_length: "אורך מהפוסט שמופיע בתקציר ב־Zulip"
+    #######################################
+    ###### ROCKET CHAT SETTINGS ###########
+    #######################################
     chat_integration_rocketchat_enabled: "הפעלת ספק שילוב הצ׳אט עם Rocket Chat"
     chat_integration_rocketchat_webhook_url: "כתובת התליית השילוב עם Rocket Chat"
     chat_integration_rocketchat_excerpt_length: "אורך מהפוסט שמופיע בתקציר ב־Rocket Chat"
+    #######################################
+    ############ GITTER SETTINGS ##########
+    #######################################
     chat_integration_gitter_enabled: "הפעלת ספק שילוב הצ׳אט עם Gitter"
+    #######################################
+    ########## FLOWDOCK SETTINGS ##########
+    #######################################
     chat_integration_flowdock_enabled: "הפעלת ספק שילוב הצ׳אט עם Flowdock"
     chat_integration_flowdock_excerpt_length: "אורך מהפוסט שמופיע בתקציר ב־Flowdock"
+    #######################################
+    ########## GROUPME SETTINGS ##########
+    #######################################
     chat_integration_groupme_enabled: "הפעלת ספק שילוב הצ׳אט עם Groupme"
     chat_integration_groupme_excerpt_length: "אורך מהפוסט שמופיע בתקציר ב־Groupme"
     chat_integration_groupme_bot_ids: "*נדרש* מזהי הבוטים, מופרדים ב־, אם יש כמה כאלה"
     chat_integration_groupme_instance_names: "*נדרש* שמות הצ׳אטים ב־GroupMe, מופרדים ב־, אם יש כמה כאלה (באותו הסדר כמו מזהי הבוטים)"
+    ###########################################
+    ######## MICROSOFT TEAMS SETTINGS #########
+    ###########################################
     chat_integration_teams_enabled: "הפעלת ספק שילוב הצ׳אט עם Microsoft Teams"
     chat_integration_teams_excerpt_length: "אורך מהפוסט שמופיע בתקציר Microsoft Teams"
+    ###########################################
+    ######## WEBEX TEAMS SETTINGS #########
+    ###########################################
     chat_integration_webex_enabled: "הפעלת ספק שילוב הצ׳אט עם Webex Teams"
     chat_integration_webex_excerpt_length: "אורך מהפוסט שמופיע בתקציר Webex Teams"
   chat_integration:
@@ -62,6 +92,9 @@ he:
     group_message_template: "הודעות אל: ‎‎@%{name}‎"
     admin_error: "בחלק מערוצי שילובי הצ׳אט יש שגיאות. נא לבקר ב<a href='%{base_path}/admin/plugins/chat'>אגף שילובי הצ׳אט</a> כדי להבין יותר."
     provider:
+      #######################################
+      ########## SLACK STRINGS ##############
+      #######################################
       slack:
         status:
           header: |
@@ -109,6 +142,9 @@ he:
           change_first_message: "עריכת ההודעה הראשונה…"
           change_last_message: "עריכת ההודעה האחרונה…"
           loading: "מהלך השיחה נטען…"
+      #######################################
+      ########## TELEGRAM STRINGS ###########
+      #######################################
       telegram:
         unknown_chat: "צ׳אט זה אינו מוגדר באתר %{site_title}. נא לבקש מההנהלה להוסיף ערוץ עם ‚מזהה צ׳אט’ כזה %{chat_id}."
         known_chat: "צ׳אט זה מוגדר באתר %{site_title}. יש להגדיר אותו דרך לוח ההנהלה. (מזהה צ׳אט: %{chat_id})"
@@ -147,8 +183,14 @@ he:
           <b>הצגת כללים:</b> <code>‎/status</code>
 
           <b>עזרה:</b> <code>‎/help</code>
+      #######################################
+      ########### HIPCHAT STRINGS ###########
+      #######################################
       hipchat:
         message: <a href="%{post_url}">%{title}</a> פורסם על ידי <b>%{user}</b>
+      #######################################
+      ######## MATTERMOST STRINGS ###########
+      #######################################
       mattermost:
         status:
           header: |
@@ -181,6 +223,9 @@ he:
           *הצגת כללים:* `‎/discourse status`
 
           *עזרה:* `‎/discourse help`
+      #######################################
+      ############ MATRIX STRINGS ###########
+      #######################################
       matrix:
         text_message: "פרסום חדש תחת %{title} על ידי %{user} - %{post_url}"
         formatted_message: |
@@ -188,13 +233,22 @@ he:
           <blockquote>
           %{excerpt}
           </blockquote>
+      #######################################
+      ############# ZULIP STRINGS ###########
+      #######################################
       zulip:
         message: |
           פרסום חדש תחת **[%{title}](%{post_url})** על ידי **%{user}**
           ~~~quote
           %{excerpt}
           ~~~
+      #######################################
+      ########### FLOWDOCK STRINGS ##########
+      #######################################
       flowdock:
         message_title: "פורסם"
+      #######################################
+      ########### GROUPME STRINGS ##########
+      #######################################
       groupme:
         message_title: "פורסם"
