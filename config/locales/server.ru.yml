@@ -1,14 +1,11 @@
-# WARNING: Never edit this file.
-# It will be overwritten when translations are pulled from Crowdin.
-#
-# To work with us on translations, join this project:
-# https://translate.discourse.org/
-
 ru:
   site_settings:
     chat_integration_enabled: 'Включить плагин discourse-chat-integration'
     chat_integration_discourse_username: 'Имя пользователя, используемое при загрузке контента.'
     chat_integration_delay_seconds: 'Количество секунд ожидания после создания записи перед отправкой уведомлений в чат'
+    #######################################
+    ########## SLACK SETTINGS #############
+    #######################################
     chat_integration_slack_username: "Имя бота для отправки сообщения в Slack"
     chat_integration_slack_enabled: 'Включить провайдера для чат-интеграции со Slack'
     chat_integration_slack_access_token: 'OAuth-токен доступа для аутентификации в Slack'
@@ -18,40 +15,73 @@ ru:
     chat_integration_slack_outbound_webhook_url: "URL для использования 'Incoming Webhook' в Slack вместо OAuth API. Использовать не рекомендуется."
     errors:
       chat_integration_slack_api_configs_are_empty: "Вы должны ввести либо исходящий URL-адрес вебхука, либо токен доступа"
+    #######################################
+    ######### TELEGRAM SETTINGS ###########
+    #######################################
     chat_integration_telegram_enabled: "Включить чат-интеграцию с Telegram"
     chat_integration_telegram_access_token: "Токен доступа вашего бота от Telegram"
     chat_integration_telegram_excerpt_length: "Размер сообщения в Telegram"
     chat_integration_telegram_enable_slash_commands: "Разрешить управление подписками Telegram с помощью 'slash commands'"
+    #######################################
+    ########## DISCORD SETTINGS ###########
+    #######################################
     chat_integration_discord_enabled: "Включить провайдера для чат-интеграции c Discord"
     chat_integration_discord_message_content: "Сообщение, размещаемое над сводкой при отправке уведомления в Discord"
     chat_integration_discord_excerpt_length: "Размер сообщения в Discord"
+    #######################################
+    ######## MATTERMOST SETTINGS ##########
+    #######################################
     chat_integration_mattermost_enabled: "Включить провайдера для чат-интеграции c Mattermost"
     chat_integration_mattermost_webhook_url: 'URL для вебхука в Mattermost'
     chat_integration_mattermost_incoming_webhook_token: 'Токен подтверждения, используемый для аутентификации входящих запросов'
     chat_integration_mattermost_icon_url: "URL логотипа для отображения в Mattermost (по умолчанию используется логотип форума)"
     chat_integration_mattermost_excerpt_length: "Размер сообщения в Mattermost"
+    #######################################
+    ############ MATRIX SETTINGS ##########
+    #######################################
     chat_integration_matrix_enabled: "Включить провайдера для чат-интеграции с Matrix"
     chat_integration_matrix_homeserver: "Настройка homeserver для подключения. Не забудьте указать протокол"
     chat_integration_matrix_access_token: "Токен доступа для бота Matrix"
     chat_integration_matrix_excerpt_length: "Размер сообщения в Matrix"
     chat_integration_matrix_use_notice: "Используйте уведомление вместо простого сообщения"
+    #######################################
+    ########### ZULIP SETTINGS ############
+    #######################################
     chat_integration_zulip_enabled: "Включить провайдера для чат-интеграции с Zulip"
     chat_integration_zulip_server: "Базовый URL для вашего сервера Zulip. Обязательно укажите префикс http(s)://"
     chat_integration_zulip_bot_email_address: "Адрес электронной почты, связанный с вашим ботом Zulip"
     chat_integration_zulip_bot_api_key: "Ключ API для бота Zulip"
     chat_integration_zulip_excerpt_length: "Размер сообщения в Zulip"
+    #######################################
+    ###### ROCKET CHAT SETTINGS ###########
+    #######################################
     chat_integration_rocketchat_enabled: "Включить провайдера для чат-интеграции с Rocket Chat"
     chat_integration_rocketchat_webhook_url: "URL для вебхука интеграции с Rocket Chat"
     chat_integration_rocketchat_excerpt_length: "Размер сообщения в Rocket Chat"
+    #######################################
+    ############ GITTER SETTINGS ##########
+    #######################################
     chat_integration_gitter_enabled: "Включить провайдера для чат-интеграции с Gitter"
+    #######################################
+    ########## FLOWDOCK SETTINGS ##########
+    #######################################
     chat_integration_flowdock_enabled: "Включить провайдера для чат-интеграции с Flowdock"
     chat_integration_flowdock_excerpt_length: "Размер сообщения в Flowdock"
+    #######################################
+    ########## GROUPME SETTINGS ##########
+    #######################################
     chat_integration_groupme_enabled: "Включить провайдера для чат-интеграции с Groupme"
     chat_integration_groupme_excerpt_length: "Размер сообщения в Groupme"
     chat_integration_groupme_bot_ids: "*требуются* идентификаторы ботов, разделенные запятыми, при наличии нескольких ботов"
     chat_integration_groupme_instance_names: " *требуются* имена GroupMe, разделенные запятыми, при наличии нескольких элементов (в том же порядке, что и идентификаторы ботов)"
+    ###########################################
+    ######## MICROSOFT TEAMS SETTINGS #########
+    ###########################################
     chat_integration_teams_enabled: "Включить интеграцию с Microsoft Teams"
     chat_integration_teams_excerpt_length: "Размер сообщения в Microsoft Team"
+    ###########################################
+    ######## WEBEX TEAMS SETTINGS #########
+    ###########################################
     chat_integration_webex_enabled: "Включить службу интеграции с чатом Webex Teams"
     chat_integration_webex_excerpt_length: "Размер сообщения в Webex Teams"
   chat_integration:
@@ -62,6 +92,9 @@ ru:
     group_message_template: "сообщения для: @%{name}"
     admin_error: "Некоторые каналы интеграции чата имеют ошибки. Посетите <a href='%{base_path}/admin/plugins/chat'>раздел интеграции чата,</a> чтобы узнать больше."
     provider:
+      #######################################
+      ########## SLACK STRINGS ##############
+      #######################################
       slack:
         status:
           header: |
@@ -108,6 +141,9 @@ ru:
           change_first_message: "Изменить первое сообщение..."
           change_last_message: "Изменить последнее сообщение..."
           loading: "Загрузка стенограммы..."
+      #######################################
+      ########## TELEGRAM STRINGS ###########
+      #######################################
       telegram:
         unknown_chat: "Этот чат не настроен на %{site_title}. Попросите администратора добавить канал с идентификатором чата %{chat_id}."
         known_chat: "Этот чат настроен на %{site_title}. Настройте его в панели администратора. (Идентификатор чата: %{chat_id})"
@@ -144,8 +180,14 @@ ru:
           <b>List rules:</b> <code>/status</code>
 
           <b>Help:</b> <code>/help</code>
+      #######################################
+      ########### HIPCHAT STRINGS ###########
+      #######################################
       hipchat:
         message: <b>%{user}</b> размещено в <a href="%{post_url}">%{title}</a>
+      #######################################
+      ######## MATTERMOST STRINGS ###########
+      #######################################
       mattermost:
         status:
           header: |
@@ -178,6 +220,9 @@ ru:
           *List rules:* `/discourse status`
 
           *Help:* `/discourse help`
+      #######################################
+      ############ MATRIX STRINGS ###########
+      #######################################
       matrix:
         text_message: "%{user} размещено в %{title} - %{post_url}"
         formatted_message: |
@@ -186,9 +231,23 @@ ru:
           <blockquote>
           %{excerpt}
           </blockquote>
+      #######################################
+      ############# ZULIP STRINGS ###########
+      #######################################
       zulip:
-        message: "**%{user}** опубликовано в **[%{title}] (%{post_url})**\n~~~ цитата \n%{excerpt}\n~~~\n"
+        message: |
+          **%{user}** опубликовано в **[%{title}] (%{post_url})**
+          ~~~ цитата 
+          %{excerpt}
+          ~~~
+
+      #######################################
+      ########### FLOWDOCK STRINGS ##########
+      #######################################
       flowdock:
         message_title: "отправлено"
+      #######################################
+      ########### GROUPME STRINGS ##########
+      #######################################
       groupme:
         message_title: "отправлено"
