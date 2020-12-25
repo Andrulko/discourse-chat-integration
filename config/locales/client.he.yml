@@ -1,9 +1,3 @@
-# WARNING: Never edit this file.
-# It will be overwritten when translations are pulled from Crowdin.
-#
-# To work with us on translations, join this project:
-# https://translate.discourse.org/
-
 he:
   js:
     admin:
@@ -75,6 +69,9 @@ he:
           group: "כלל זה חל על פוסטים שמפנים לקבוצה זו"
           tags: "אם צוין, כלל זה יחול רק כל נושאים שיש להם לפחות אחת מהתגיות האלה."
       provider:
+        #######################################
+        ########### SLACK STRINGS #############
+        #######################################
         slack:
           title: "Slack"
           param:
@@ -84,6 +81,9 @@ he:
           errors:
             action_prohibited: "לבוט אין הרשה לפרסם לערוץ הזה"
             channel_not_found: "הערוץ שצוין לא קיים ב־Slack"
+        #######################################
+        ########## TELEGRAM STRINGS ###########
+        #######################################
         telegram:
           title: "טלגרם"
           param:
@@ -96,6 +96,9 @@ he:
           errors:
             channel_not_found: "הערוץ שצוין לא קיים בטלגרם"
             forbidden: "לבוט אין הרשאה לפרסם לערוץ הזה"
+        #######################################
+        ########### DISCORD STRINGS ###########
+        #######################################
         discord:
           title: "Discord"
           param:
@@ -105,6 +108,9 @@ he:
             webhook_url:
               title: כתובת התלייה
               help: כתובת ההתלייה נוצרה בהגדרות שרת ה־Discord שלך
+        #######################################
+        ######### MATTERMOST STRINGS ##########
+        #######################################
         mattermost:
           title: "Mattermost"
           param:
@@ -113,6 +119,9 @@ he:
               help: "למשל #ערוץ, @שם_משתמש."
           errors:
             channel_not_found: "הערוץ שצוין לא קיים ב־Mattermost"
+        #######################################
+        ############ MATRIX STRINGS ###########
+        #######################################
         matrix:
           title: "Matrix"
           param:
@@ -125,6 +134,9 @@ he:
           errors:
             unknown_token: "אסימון הגישה שגוי"
             unknown_room: "מזהה החדר שגוי"
+        #######################################
+        ############# ZULIP STRINGS ###########
+        #######################################
         zulip:
           title: "Zulip"
           param:
@@ -136,6 +148,9 @@ he:
               help: "הנושא שיינתן להודעות אלו שנשלחות על ידי הבוט"
           errors:
             does_not_exist: "תזרים זה לא קיים ב־Zulip"
+        #######################################
+        ######## ROCKET CHAT STRINGS ##########
+        #######################################
         rocketchat:
           title: "Rocket.Chat"
           param:
@@ -144,6 +159,9 @@ he:
               help: "למשל #ערוץ, @שם_משתמש."
           errors:
             invalid_channel: "ערוץ זה לא קיים ב־‏Rocket Chat"
+        #######################################
+        ############ GITTER STRINGS ###########
+        #######################################
         gitter:
           title: "Gitter"
           param:
@@ -153,12 +171,18 @@ he:
             webhook_url:
               title: "כתובת התלייה"
               help: "הכתובת שסופקה בעת יצירת שילוב בחדר Gitter."
+        #######################################
+        ########## FLOWDOCK STRINGS ###########
+        #######################################
         flowdock:
           title: "Flowdock"
           param:
             flow_token:
               title: "אסימון Flow"
               help: "אסימון ה־flow לאחר יצירת המשאב ל־flow אליו ברצונך לשלוח הודעות."
+        #######################################
+        ########## GROUPME STRINGS ###########
+        #######################################
         groupme:
           title: "GroupMe"
           param:
@@ -168,6 +192,9 @@ he:
           errors:
             not_found: "הנתיב אליו ניסית לפרסם את ההודעה שלך לא נמצא. נא לבדוק את מזהה הבוט בהגדרות האתר."
             instance_names_issue: "שם העותק אינו בתצורה הנכונה או שלא סופק"
+        ############################################
+        ######### MICROSOFT TEAMS STRINGS ##########
+        ############################################
         teams:
           title: "Microsoft Teams"
           param:
