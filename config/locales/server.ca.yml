@@ -1,14 +1,11 @@
-# WARNING: Never edit this file.
-# It will be overwritten when translations are pulled from Crowdin.
-#
-# To work with us on translations, join this project:
-# https://translate.discourse.org/
-
 ca:
   site_settings:
     chat_integration_enabled: 'Habilita el connector d''integració de xat de Discourse'
     chat_integration_discourse_username: 'Nom d''usuari per a identificar-se quan s''obté contingut. '
     chat_integration_delay_seconds: 'Nombre de segons que cal esperar després de la creació de publicacions abans d''enviar les notificacions de xat'
+    #######################################
+    ########## SLACK SETTINGS #############
+    #######################################
     chat_integration_slack_username: "Nom d'usuari de bot per a publicar en Slack"
     chat_integration_slack_enabled: 'Habilita el proveïdor d''integració de xats de Slack'
     chat_integration_slack_access_token: 'Token d''accés OAuth per a autenticar-se amb Slack'
@@ -18,34 +15,75 @@ ca:
     chat_integration_slack_outbound_webhook_url: "Per a utilitzar el sistema 'Incoming Webhook' de Slack en comptes de l'API OAuth. No es recomana."
     errors:
       chat_integration_slack_api_configs_are_empty: "Heu d'introduir l'URL de webhook de sortida o un testimoni d'accés"
+    #######################################
+    ######### TELEGRAM SETTINGS ###########
+    #######################################
     chat_integration_telegram_enabled: "Habilita el proveïdor d'integració de xat de Telegram"
     chat_integration_telegram_access_token: "El testimoni d'accés del vostre bot des del BotFather de Telegram"
     chat_integration_telegram_excerpt_length: "Longitud de l'extracte de publicació de Telegram"
     chat_integration_telegram_enable_slash_commands: "Permet gestionar les subscripcions de Telegram mitjançant ordres de barra inclinada"
+    #######################################
+    ########## DISCORD SETTINGS ###########
+    #######################################
     chat_integration_discord_enabled: "Habilita el proveïdor d'integració de xat de Discord"
     chat_integration_discord_message_content: "El missatge que s'inclou sobre el resum en enviar una notificació a Discord"
     chat_integration_discord_excerpt_length: "Longitud de l'extracte de publicació de Discord"
+    #######################################
+    ######## MATTERMOST SETTINGS ##########
+    #######################################
     chat_integration_mattermost_enabled: "Habiliteu el proveïdor de la integració de xat de Mattermost"
     chat_integration_mattermost_webhook_url: 'URL per al webhook de Mattermost'
     chat_integration_mattermost_incoming_webhook_token: 'El testimoni de verificació que s''utilitza per a autenticar les sol·licituds entrants'
     chat_integration_mattermost_icon_url: "Icona per a publicacions en Mattermost (per defecte el logo del fòrum)"
     chat_integration_mattermost_excerpt_length: "Longitud de l'extracte de publicació de Mattermost"
+    #######################################
+    ############ MATRIX SETTINGS ##########
+    #######################################
     chat_integration_matrix_enabled: "Habilita el proveïdor d'integració de xat de Matrix"
     chat_integration_matrix_homeserver: "Servidor domèstic al qual es connecta. Assegureu-vos d'incloure-hi el protocol."
     chat_integration_matrix_access_token: "Testimoni d'accés per al compte Matrix del bot"
     chat_integration_matrix_excerpt_length: "Longitud de l'extracte de publicació de Matrix"
     chat_integration_matrix_use_notice: "Utilitza un avís en comptes d'un missatge simple"
+    #######################################
+    ########### ZULIP SETTINGS ############
+    #######################################
     chat_integration_zulip_enabled: "Habiliteu el proveïdor de la integració de xat de Zulip"
     chat_integration_zulip_server: "L'URL base del vostre servidor Zulip. Assegureu-vos d'incloure-hi http(s): //"
     chat_integration_zulip_bot_email_address: "L'adreça de correu electrònic associada al vostre bot Zulip"
     chat_integration_zulip_bot_api_key: "La clau d'API per al vostre bot Zulip"
     chat_integration_zulip_excerpt_length: "Longitud de l'extracte de publicació de Zulip"
+    #######################################
+    ###### ROCKET CHAT SETTINGS ###########
+    #######################################
     chat_integration_rocketchat_enabled: "Activa el proveïdor d'integració de xat de Rocket Chat"
     chat_integration_rocketchat_webhook_url: "L'URL per al webhook d'integració de Rocket Chat"
     chat_integration_rocketchat_excerpt_length: "Longitud de l'extracte de publicació de Rocket Chat"
+    #######################################
+    ############ GITTER SETTINGS ##########
+    #######################################
     chat_integration_gitter_enabled: "Habilita el proveïdor d'integració de xat de Gitter"
+    #######################################
+    ########## FLOWDOCK SETTINGS ##########
+    #######################################
     chat_integration_flowdock_enabled: "Habiliteu el proveïdor de la integració de xat de Flowdock"
     chat_integration_flowdock_excerpt_length: "Longitud de l'extracte de publicació de Flowdock"
+    #######################################
+    ########## GROUPME SETTINGS ##########
+    #######################################
+    chat_integration_groupme_enabled: "Enable the Groupme chat integration provider"
+    chat_integration_groupme_excerpt_length: "Groupme post excerpt length"
+    chat_integration_groupme_bot_ids: "*required* Bot IDs, seperated by ',' if there are multiple"
+    chat_integration_groupme_instance_names: " *required* Name of the GroupMe chat, seperated by ',' if there are multiple (same order as Bot IDs)"
+    ###########################################
+    ######## MICROSOFT TEAMS SETTINGS #########
+    ###########################################
+    chat_integration_teams_enabled: "Enable the Microsoft Teams chat integration provider"
+    chat_integration_teams_excerpt_length: "Microsoft Team post excerpt length"
+    ###########################################
+    ######## WEBEX TEAMS SETTINGS #########
+    ###########################################
+    chat_integration_webex_enabled: "Enable the Webex Teams chat integration provider"
+    chat_integration_webex_excerpt_length: "Webex Team post excerpt length"
   chat_integration:
     all_categories: "(totes les categories)"
     deleted_category: "(categoria suprimida)"
@@ -54,6 +92,9 @@ ca:
     group_message_template: "missatges a: @%{name}"
     admin_error: "Alguns canals d'integració de xat tenen errors. Visiteu <a href='%{base_path}/admin/plugins/chat'>la secció d'integració de xat</a> per a obtenir més informació."
     provider:
+      #######################################
+      ########## SLACK STRINGS ##############
+      #######################################
       slack:
         status:
           header: |
@@ -73,6 +114,23 @@ ca:
         not_found:
           tag: "No es pot trobar l'etiqueta *%{name}*."
           category: "No es pot trobar la categoria *%{name}*. Categories disponibles: *%{list}*"
+        help: |
+          *New rule:* `/discourse [thread|watch|follow|mute] [category] [tag:name]`
+          (you must specify a rule type and at least one category or tag)
+          - *thread* – notify this channel for new topics, thread replies if possible
+          - *watch* – notify this channel for new topics and new replies
+          - *follow* – notify this channel for new topics
+          - *mute* – block notifications to this channel
+
+          *Remove rule:* `/discourse remove [rule number]`
+          (`[rule number]` can be found by running `/discourse status`)
+
+          *List rules:* `/discourse status`
+
+          *[Experimental] Post transcript:* `/discourse post [n]`
+          Create a draft topic on discourse containing the last `n` posts in this channel
+
+          *Help:* `/discourse help`
         transcript:
           error: "Alguna cosa ha fallat en construir la transcripció, disculpeu!"
           post_to_discourse: "Feu clic aquí per a esbossar una publicació en Discourse amb una transcripció"
@@ -84,6 +142,9 @@ ca:
           change_first_message: "Canvia el primer missatge..."
           change_last_message: "Canvia el darrer missatge..."
           loading: "Carregant la transcripció..."
+      #######################################
+      ########## TELEGRAM STRINGS ###########
+      #######################################
       telegram:
         unknown_chat: "Aquest xat no està configurat en %{site_title}. Demaneu a un administrador que afegeixi un canal amb l'ID de xat %{chat_id}."
         known_chat: "Aquest xat està configurat en %{site_title}. Configureu-lo en el tauler d'administració. (ID de xat: %{chat_id})"
@@ -122,8 +183,14 @@ ca:
           <b>Llista de regles:</b> <code>/discourse status</code>
 
           <b>Ajuda:</b> <code>/discourse help</code>
+      #######################################
+      ########### HIPCHAT STRINGS ###########
+      #######################################
       hipchat:
         message: <b>%{user}</b> publicat en <a href="%{post_url}">%{title}</a>
+      #######################################
+      ######## MATTERMOST STRINGS ###########
+      #######################################
       mattermost:
         status:
           header: |
@@ -156,6 +223,9 @@ ca:
           *Llista de regles:* `/discourse status`
 
           *Ajuda:* `/discourse help`
+      #######################################
+      ############ MATRIX STRINGS ###########
+      #######################################
       matrix:
         text_message: "%{user} publicat en %{title} - %{post_url}"
         formatted_message: |
@@ -163,13 +233,22 @@ ca:
           <blockquote>
           %{excerpt}
           </blockquote>
+      #######################################
+      ############# ZULIP STRINGS ###########
+      #######################################
       zulip:
         message: |
           **%{user}** publicat en **[%{title}](%{post_url})**
           ~~~citació
           %{excerpt}
           ~~~
+      #######################################
+      ########### FLOWDOCK STRINGS ##########
+      #######################################
       flowdock:
         message_title: "publicat"
+      #######################################
+      ########### GROUPME STRINGS ##########
+      #######################################
       groupme:
         message_title: "publicat"

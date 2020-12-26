@@ -1,4 +1,4 @@
-el:
+pl:
   site_settings:
     chat_integration_enabled: 'Enable the discourse-chat-integration plugin'
     chat_integration_discourse_username: 'Username of user to act as when fetching content.'

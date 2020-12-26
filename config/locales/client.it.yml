@@ -1,9 +1,3 @@
-# WARNING: Never edit this file.
-# It will be overwritten when translations are pulled from Crowdin.
-#
-# To work with us on translations, join this project:
-# https://translate.discourse.org/
-
 it:
   js:
     admin:
@@ -16,6 +10,8 @@ it:
       no_providers: "È necessario abilitare alcuni provider nelle impostazioni del plugin"
       channels_with_errors: "L'invio di messaggi per alcuni canali di questo provider non ha funzionato. Fai clic sull'icona/e di errore per saperne di più."
       channel_exception: "Si è verificato un errore sconosciuto l'ultima volta che un messaggio è stato inviato su a questo canale."
+      group_mention_template: "Mentions of: @%{name}"
+      group_message_template: "Messages to: @%{name}"
       choose_group: "(scegli un gruppo)"
       all_categories: "(tutte le categorie)"
       all_tags: "(tutte le etichette)"
@@ -40,6 +36,7 @@ it:
         mute: 'Silenzia'
         follow: 'Solo il primo messaggio'
         watch: 'Tutti i messaggi e le risposte'
+        thread: 'All posts with threaded replies'
       rule_table:
         filter: "Filtra"
         category: "Categoria"
@@ -72,6 +69,9 @@ it:
           group: "Questa regola si applica ai post che fanno riferimento a questo gruppo"
           tags: "Se specificato, questa regola si applica solo agli argomenti che hanno almeno una di queste Etichette"
       provider:
+        #######################################
+        ########### SLACK STRINGS #############
+        #######################################
         slack:
           title: "Slack"
           param:
@@ -81,6 +81,9 @@ it:
           errors:
             action_prohibited: "Il bot non ha il permesso di pubblicare su quel canale"
             channel_not_found: "Il canale specificato non esiste su Slack"
+        #######################################
+        ########## TELEGRAM STRINGS ###########
+        #######################################
         telegram:
           title: "Telegram"
           param:
@@ -93,6 +96,9 @@ it:
           errors:
             channel_not_found: "Il canale specificato non esiste su Telegram"
             forbidden: "Il bot non ha il permesso di pubblicare su questo canale"
+        #######################################
+        ########### DISCORD STRINGS ###########
+        #######################################
         discord:
           title: "Discord"
           param:
@@ -102,6 +108,9 @@ it:
             webhook_url:
               title: Webhook URL
               help: L'URL del webhook creato nelle impostazioni del server Discord
+        #######################################
+        ######### MATTERMOST STRINGS ##########
+        #######################################
         mattermost:
           title: "Mattermost"
           param:
@@ -110,6 +119,9 @@ it:
               help: "es. #canale, @nomeutente."
           errors:
             channel_not_found: "Il canale specificato non esiste in Mattermost"
+        #######################################
+        ############ MATRIX STRINGS ###########
+        #######################################
         matrix:
           title: "Matrix"
           param:
@@ -122,6 +134,9 @@ it:
           errors:
             unknown_token: "Il token di accesso non è valido"
             unknown_room: "Il room ID non è valido"
+        #######################################
+        ############# ZULIP STRINGS ###########
+        #######################################
         zulip:
           title: "Zulip"
           param:
@@ -133,6 +148,9 @@ it:
               help: "L'oggetto che i messaggi inviati dal bot dovrebbero avere"
           errors:
             does_not_exist: "Questo stream non esiste su Zulip"
+        #######################################
+        ######## ROCKET CHAT STRINGS ##########
+        #######################################
         rocketchat:
           title: "Rocket.Chat"
           param:
@@ -141,6 +159,9 @@ it:
               help: "es. #canale, @nomeutente."
           errors:
             invalid_channel: "Quel canale non esiste su Rocket Chat"
+        #######################################
+        ############ GITTER STRINGS ###########
+        #######################################
         gitter:
           title: "Gitter"
           param:
@@ -150,9 +171,49 @@ it:
             webhook_url:
               title: "Webhook URL"
               help: "L'URL fornito quando si crea una nuova integrazione in una stanza Gitter."
+        #######################################
+        ########## FLOWDOCK STRINGS ###########
+        #######################################
         flowdock:
           title: "Flowdock"
           param:
             flow_token:
               title: "Flow Token"
               help: "Il flow token fornito dopo aver creato una fonte per un flow a cui si desidera inviare messaggi."
+        #######################################
+        ########## GROUPME STRINGS ###########
+        #######################################
+        groupme:
+          title: "GroupMe"
+          param:
+            groupme_instance_name:
+              title: "GroupMe Instance Name"
+              help: "name of the Groupme instance as listed in Site Settings. use 'all' to send to all  instances"
+          errors:
+            not_found: "The path you attempted to post your message to was not found. Check the Bot ID in Site Settings."
+            instance_names_issue: "instance names incorrectly formatted or not provided"
+        ############################################
+        ######### MICROSOFT TEAMS STRINGS ##########
+        ############################################
+        teams:
+          title: "Microsoft Teams"
+          param:
+            name:
+              title: "Name"
+              help: "A Teams channel name e.g. discourse"
+            webhook_url:
+              title: "Webhook URL"
+              help: "The URL provided when you create a new incomming webhook"
+          errors:
+            invalid_channel: "That channel does not exist on Microsoft Teams"
+        webex:
+          title: "Webex Teams"
+          param:
+            name:
+              title: "Name"
+              help: "A Webex space name e.g. discourse"
+            webhook_url:
+              title: "Webhook URL"
+              help: "The URL provided when you create a new incomming webhook"
+          errors:
+            invalid_channel: "That channel does not exist on Webex"

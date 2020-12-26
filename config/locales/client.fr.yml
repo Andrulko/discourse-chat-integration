@@ -1,9 +1,3 @@
-# WARNING: Never edit this file.
-# It will be overwritten when translations are pulled from Crowdin.
-#
-# To work with us on translations, join this project:
-# https://translate.discourse.org/
-
 fr:
   js:
     admin:
@@ -42,6 +36,7 @@ fr:
         mute: 'Désactiver'
         follow: 'Premier message seulement'
         watch: 'Tous les messages et réponses'
+        thread: 'All posts with threaded replies'
       rule_table:
         filter: "Filtrer"
         category: "Catégorie"
@@ -74,6 +69,9 @@ fr:
           group: "Cette règle s'appliquera aux messages qui référencent ce groupe"
           tags: "Si elle est spécifiée, cette règle ne s'appliquera qu'aux sujets qui ont au moins une de ces étiquettes"
       provider:
+        #######################################
+        ########### SLACK STRINGS #############
+        #######################################
         slack:
           title: "Slack"
           param:
@@ -83,6 +81,9 @@ fr:
           errors:
             action_prohibited: "Ce bot n'a pas l'autorisation pour publier dans ce canal"
             channel_not_found: "Le canal spécifié n'existe pas dans Slack"
+        #######################################
+        ########## TELEGRAM STRINGS ###########
+        #######################################
         telegram:
           title: "Telegram"
           param:
@@ -95,6 +96,9 @@ fr:
           errors:
             channel_not_found: "Le canal spécifié n'existe pas sur Telegram"
             forbidden: "Ce bot n'a pas l'autorisation pour publier dans ce canal"
+        #######################################
+        ########### DISCORD STRINGS ###########
+        #######################################
         discord:
           title: "Discord"
           param:
@@ -104,6 +108,9 @@ fr:
             webhook_url:
               title: Webhook URL
               help: L'URL du Webhook créée dans les paramètres de votre serveur Discord
+        #######################################
+        ######### MATTERMOST STRINGS ##########
+        #######################################
         mattermost:
           title: "Mattermost"
           param:
@@ -112,6 +119,9 @@ fr:
               help: "p.ex. #canal, @utilisateur."
           errors:
             channel_not_found: "Le canal spécifié n'existe pas sur Mattermost"
+        #######################################
+        ############ MATRIX STRINGS ###########
+        #######################################
         matrix:
           title: "Matrix"
           param:
@@ -124,6 +134,9 @@ fr:
           errors:
             unknown_token: "Le token d'accès n'est pas valide"
             unknown_room: "Le Room ID est invalide"
+        #######################################
+        ############# ZULIP STRINGS ###########
+        #######################################
         zulip:
           title: "Zulip"
           param:
@@ -135,6 +148,9 @@ fr:
               help: "Le sujet que ces messages envoyés par le bot devrait avoir"
           errors:
             does_not_exist: "Ce stream n'existe pas dans Zulip"
+        #######################################
+        ######## ROCKET CHAT STRINGS ##########
+        #######################################
         rocketchat:
           title: "Rocket.Chat"
           param:
@@ -143,6 +159,9 @@ fr:
               help: "p.ex. #canal, @utilisateur."
           errors:
             invalid_channel: "Le canal spécifié n'existe pas sur Rocket Chat"
+        #######################################
+        ############ GITTER STRINGS ###########
+        #######################################
         gitter:
           title: "Gitter"
           param:
@@ -152,12 +171,18 @@ fr:
             webhook_url:
               title: "Webhook URL"
               help: "L'URL fourni quand vous créer une nouvelle intégration dans un room Gitter."
+        #######################################
+        ########## FLOWDOCK STRINGS ###########
+        #######################################
         flowdock:
           title: "Flowdock"
           param:
             flow_token:
               title: "Flow Token"
               help: "Le flow token fourni après création d'une source pour un flow dans lequel vous voulez envoyer des messages."
+        #######################################
+        ########## GROUPME STRINGS ###########
+        #######################################
         groupme:
           title: "GroupMe"
           param:
@@ -167,3 +192,28 @@ fr:
           errors:
             not_found: "Le chemin vers lequel vous avez essayé de poster votre message n'a pas été trouvé. Vérifiez l'ID du bot dans les paramètres."
             instance_names_issue: "les noms d'instance sont incorrectement formatés ou non fournis"
+        ############################################
+        ######### MICROSOFT TEAMS STRINGS ##########
+        ############################################
+        teams:
+          title: "Microsoft Teams"
+          param:
+            name:
+              title: "Name"
+              help: "A Teams channel name e.g. discourse"
+            webhook_url:
+              title: "Webhook URL"
+              help: "The URL provided when you create a new incomming webhook"
+          errors:
+            invalid_channel: "That channel does not exist on Microsoft Teams"
+        webex:
+          title: "Webex Teams"
+          param:
+            name:
+              title: "Name"
+              help: "A Webex space name e.g. discourse"
+            webhook_url:
+              title: "Webhook URL"
+              help: "The URL provided when you create a new incomming webhook"
+          errors:
+            invalid_channel: "That channel does not exist on Webex"

@@ -1,14 +1,11 @@
-# WARNING: Never edit this file.
-# It will be overwritten when translations are pulled from Crowdin.
-#
-# To work with us on translations, join this project:
-# https://translate.discourse.org/
-
 ur:
   site_settings:
     chat_integration_enabled: 'ڈسکورس-چَیٹ-اِنٹیگرَیشَن پلگ اِن کو فعال کریں'
     chat_integration_discourse_username: 'صارف کا صارف نام جس کی بنیاد پر مواد لایا جائے۔'
     chat_integration_delay_seconds: 'پوسٹ کی تخلیق کے بعد چَیٹ اطلاعات بھیجنے سے پہلے کتنے سیکنڈ کا انتظار کیا جائے'
+    #######################################
+    ########## SLACK SETTINGS #############
+    #######################################
     chat_integration_slack_username: "سلَیک پر پوسٹ کرنے کیلئے بَوٹ کا صارف نام"
     chat_integration_slack_enabled: 'سلَّیک کا چَیٹ-اِنٹیگرَیشَن پرووَائیڈر فعال کریں'
     chat_integration_slack_access_token: 'سلَّیک کے ساتھ توثیق کیلئے OAuth ایکسَیس ٹوکن'
@@ -18,34 +15,75 @@ ur:
     chat_integration_slack_outbound_webhook_url: "OAuth API کے بجائے سلَّیک کے 'اِنکَمینگ وَیب ھُوک' کے سِسٹَم کا استعمال کرنے کیلئے۔ ناپسندیدہ۔"
     errors:
       chat_integration_slack_api_configs_are_empty: "آپ کا ایک آؤٹ باؤنڈ وَیب ھُوک URL، یا ایک ایکسَیس ٹوکن درج کرنا ضروری ہے"
+    #######################################
+    ######### TELEGRAM SETTINGS ###########
+    #######################################
     chat_integration_telegram_enabled: "ٹَیلیگرام کا چَیٹ-اِنٹیگرَیشَن پرووَائیڈر فعال کریں"
     chat_integration_telegram_access_token: "ٹَیلیگرام بَوٹفادر کی طرف سے آپ کے بَوٹ کا ایکسَیس ٹوکن"
     chat_integration_telegram_excerpt_length: "ٹَیلیگرام پوسٹ کے اقتباس کا سائز"
     chat_integration_telegram_enable_slash_commands: "ٹَیلیگرام کی سَبسکرِپشنز کو 'سلَیش کمانڈز' کا استعمال کرتے ہوئے مَینَیج کرنے کی اجازت دیں"
+    #######################################
+    ########## DISCORD SETTINGS ###########
+    #######################################
     chat_integration_discord_enabled: "ڈِسکَورڈ کا چَیٹ-اِنٹیگرَیشَن پرووَائیڈر فعال کریں"
     chat_integration_discord_message_content: "ڈِسکَورڈ پر اِطلاع بھیجنے پر، خلاصہ کے اوپر شامل کیے جانے والا پیغام"
     chat_integration_discord_excerpt_length: "ڈِسکَورڈ پوسٹ کے اقتباس کا سائز"
+    #######################################
+    ######## MATTERMOST SETTINGS ##########
+    #######################################
     chat_integration_mattermost_enabled: "مَیٹرمَوسٹ کا چَیٹ-اِنٹیگرَیشَن پرووَائیڈر فعال کریں"
     chat_integration_mattermost_webhook_url: 'مَیٹرمَوسٹ وَیب ھُوک کیلئے URL'
     chat_integration_mattermost_incoming_webhook_token: 'آنے والی درخواستوں کی توثیق کرنے کیلئے استعمال ہونے والا توثیقی ٹوکن'
     chat_integration_mattermost_icon_url: "مَیٹرمَوسٹ پر پوسٹس کیلئے آئکن (ڈِیفالٹ فورَم لوگو ہے)"
     chat_integration_mattermost_excerpt_length: "مَیٹرمَوسٹ پوسٹ کے اقتباس کا سائز"
+    #######################################
+    ############ MATRIX SETTINGS ##########
+    #######################################
     chat_integration_matrix_enabled: "مَیٹرِکس کا چَیٹ-اِنٹیگرَیشَن پرووَائیڈر فعال کریں"
     chat_integration_matrix_homeserver: "ہوم سرور جس کے ساتھ کَنیکٹ کرنا ہے۔ پروٹوکول شامل کرنا یقینی بنائیں"
     chat_integration_matrix_access_token: "بَوٹ کے مَیٹرِکس اکاؤنٹ کیلئے ایکسَیس ٹوکن"
     chat_integration_matrix_excerpt_length: "مَیٹرِکس پوسٹ کے اقتباس کا سائز"
     chat_integration_matrix_use_notice: "سادہ پیغام کے بجائے نوٹس کا استعمال کریں"
+    #######################################
+    ########### ZULIP SETTINGS ############
+    #######################################
     chat_integration_zulip_enabled: "زُولِپ کا چَیٹ-اِنٹیگرَیشَن پرووَائیڈر فعال کریں"
     chat_integration_zulip_server: "آپ کے زُولِپ سرور کا بَیس URL۔ http(s):// شامل کرنا یقینی بنائیں"
     chat_integration_zulip_bot_email_address: "آپ کے زُولِپ بَوٹ کے ساتھ منسلک ای میل ایڈریس"
     chat_integration_zulip_bot_api_key: "آپ کے زُولِپ بَوٹ کیلئے API کِی"
     chat_integration_zulip_excerpt_length: "زُولِپ پوسٹ کے اقتباس کا سائز"
+    #######################################
+    ###### ROCKET CHAT SETTINGS ###########
+    #######################################
     chat_integration_rocketchat_enabled: "راکٹ چَیٹ کا چَیٹ-اِنٹیگرَیشَن پرووَائیڈر فعال کریں"
     chat_integration_rocketchat_webhook_url: "راکٹ چَیٹ اِنٹیگرَیشَن وَیب ھُوک کیلئے URL"
     chat_integration_rocketchat_excerpt_length: "راکٹ چَیٹ پوسٹ کے اقتباس کا سائز"
+    #######################################
+    ############ GITTER SETTINGS ##########
+    #######################################
     chat_integration_gitter_enabled: "گِیٹر کا چَیٹ-اِنٹیگرَیشَن پرووَائیڈر فعال کریں"
+    #######################################
+    ########## FLOWDOCK SETTINGS ##########
+    #######################################
     chat_integration_flowdock_enabled: "فلَوڈَوک کا چَیٹ-اِنٹیگرَیشَن پرووَائیڈر فعال کریں"
     chat_integration_flowdock_excerpt_length: "فلَوڈَوک پوسٹ کے اقتباس کا سائز"
+    #######################################
+    ########## GROUPME SETTINGS ##########
+    #######################################
+    chat_integration_groupme_enabled: "Enable the Groupme chat integration provider"
+    chat_integration_groupme_excerpt_length: "Groupme post excerpt length"
+    chat_integration_groupme_bot_ids: "*required* Bot IDs, seperated by ',' if there are multiple"
+    chat_integration_groupme_instance_names: " *required* Name of the GroupMe chat, seperated by ',' if there are multiple (same order as Bot IDs)"
+    ###########################################
+    ######## MICROSOFT TEAMS SETTINGS #########
+    ###########################################
+    chat_integration_teams_enabled: "Enable the Microsoft Teams chat integration provider"
+    chat_integration_teams_excerpt_length: "Microsoft Team post excerpt length"
+    ###########################################
+    ######## WEBEX TEAMS SETTINGS #########
+    ###########################################
+    chat_integration_webex_enabled: "Enable the Webex Teams chat integration provider"
+    chat_integration_webex_excerpt_length: "Webex Team post excerpt length"
   chat_integration:
     all_categories: "(تمام زُمرَہ جات)"
     deleted_category: "(حذف کردہ زُمرہ)"
@@ -54,6 +92,9 @@ ur:
     group_message_template: "پیغامات: @%{name} کیلئے"
     admin_error: "کچھ چَیٹ اِنٹیگرَیشَن چینلز میں خرابیاں ہیں۔ مزید جاننے کیلئے <a href='%{base_path}/admin/plugins/chat'>چَیٹ اِنٹیگرَیشَن سیکشن</a> پر جائیں۔"
     provider:
+      #######################################
+      ########## SLACK STRINGS ##############
+      #######################################
       slack:
         status:
           header: |
@@ -73,6 +114,23 @@ ur:
         not_found:
           tag: "ٹیگ *%{name}* تلاش نہیں کیا جا سکا۔"
           category: "زُمرہ *%{name}* تلاش نہیں کیا جا سکا۔ دستیاب زُمرہ جات: *%{list}*"
+        help: |
+          *New rule:* `/discourse [thread|watch|follow|mute] [category] [tag:name]`
+          (you must specify a rule type and at least one category or tag)
+          - *thread* – notify this channel for new topics, thread replies if possible
+          - *watch* – notify this channel for new topics and new replies
+          - *follow* – notify this channel for new topics
+          - *mute* – block notifications to this channel
+
+          *Remove rule:* `/discourse remove [rule number]`
+          (`[rule number]` can be found by running `/discourse status`)
+
+          *List rules:* `/discourse status`
+
+          *[Experimental] Post transcript:* `/discourse post [n]`
+          Create a draft topic on discourse containing the last `n` posts in this channel
+
+          *Help:* `/discourse help`
         transcript:
           error: "ٹرانسکرِپٹ بناتے وقت کچھ غلط ہو گیا، معذرت!"
           post_to_discourse: "ٹرانسکرِپٹ کے ساتھ ڈِسکورس پر ایک پوسٹ ڈرافٹ کرنے کیلئے یہاں کلک کریں"
@@ -84,6 +142,9 @@ ur:
           change_first_message: "پہلا پیغام تبدیل کریں..."
           change_last_message: "آخری پیغام تبدیل کریں..."
           loading: "ٹرانسکرِپٹ لوڈ ہو رہی ہے..."
+      #######################################
+      ########## TELEGRAM STRINGS ###########
+      #######################################
       telegram:
         unknown_chat: "یہ چیٹ %{site_title} پر سَیٹ اَپ نہیں ہے۔ 'چیٹ ID' %{chat_id} والا چَینل شامل کرنے کیلئے ایک ایڈمِنِسٹریٹر کو کہیے۔"
         known_chat: "یہ چیٹ %{site_title} پر سَیٹ اَپ ہے۔ اِسے اَیڈمِن پَینل میں ترتیب دیں۔ (چیٹ ID:%{chat_id})"
@@ -122,8 +183,14 @@ ur:
           <b>اصولوں کی فہرست:</b> <code>status/</code>
 
           <b>مدد:</b> <code>help/</code>
+      #######################################
+      ########### HIPCHAT STRINGS ###########
+      #######################################
       hipchat:
         message: <b>%{user}</b> نے <a href="%{post_url}">%{title}</a> میں پوسٹ کیا۔
+      #######################################
+      ######## MATTERMOST STRINGS ###########
+      #######################################
       mattermost:
         status:
           header: |
@@ -156,6 +223,9 @@ ur:
           *اصولوں کی فہرست:* `discourse status/`
 
           *مدد:* `discourse help/`
+      #######################################
+      ############ MATRIX STRINGS ###########
+      #######################################
       matrix:
         text_message: "%{user} نے %{title} میں پوسٹ کیا - %{post_url}"
         formatted_message: |
@@ -163,13 +233,22 @@ ur:
           <blockquote>
           %{excerpt}
           </blockquote>
+      #######################################
+      ############# ZULIP STRINGS ###########
+      #######################################
       zulip:
         message: |
           **%{user}** نے **[%{title}](%{post_url})** میں پوسٹ کیا
           ~~~اقتباس
           %{excerpt}
           ~~~
+      #######################################
+      ########### FLOWDOCK STRINGS ##########
+      #######################################
       flowdock:
         message_title: "پوسٹ کیا"
+      #######################################
+      ########### GROUPME STRINGS ##########
+      #######################################
       groupme:
         message_title: "پوسٹ کیا"
